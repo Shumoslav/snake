@@ -1,0 +1,8 @@
+C:\Personal\GeekBrains\git\snake\snake\bin\Debug\snake.exe.config
+C:\Personal\GeekBrains\git\snake\snake\bin\Debug\snake.exe
+C:\Personal\GeekBrains\git\snake\snake\bin\Debug\snake.pdb
+C:\Personal\GeekBrains\git\snake\snake\obj\Debug\snake.csproj.AssemblyReference.cache
+C:\Personal\GeekBrains\git\snake\snake\obj\Debug\snake.csproj.SuggestedBindingRedirects.cache
+C:\Personal\GeekBrains\git\snake\snake\obj\Debug\snake.csproj.CoreCompileInputs.cache
+C:\Personal\GeekBrains\git\snake\snake\obj\Debug\snake.exe
+C:\Personal\GeekBrains\git\snake\snake\obj\Debug\snake.pdb
