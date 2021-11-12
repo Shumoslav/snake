@@ -24,7 +24,7 @@ namespace snake
             sym = _sym; 
         }
 
-        public void draw()
+        public void Draw()
         {
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
