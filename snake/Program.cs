@@ -10,13 +10,19 @@ namespace snake
     {
         static void Main(string[] args)
         {
+            Console.SetWindowSize(80, 25);
+            Console.SetBufferSize(80, 25);
 
-            HorizontalLine Hline = new HorizontalLine(5,8,7,'#');
-            Hline.Drow();
+            //Drawing frame
+            HorizontalLine Topline = new HorizontalLine(0, 78, 0, '+');
+            HorizontalLine Bottomline = new HorizontalLine(0, 78, 24, '+');
+            VerticalLine LeftLine = new VerticalLine(0, 24, 0, '+');
+            VerticalLine RightLine = new VerticalLine(0, 24, 78, '+');
 
-            VerticalLine Vline = new VerticalLine(8, 7, 11, '#');
-            Vline.Drew();
-
+            Topline.Drow();
+            Bottomline.Drow();
+            LeftLine.Drow();    
+            RightLine.Drow();   
 
             Console.ReadLine();
         }
