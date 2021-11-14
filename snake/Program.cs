@@ -14,20 +14,15 @@ namespace snake
             Console.SetWindowSize(80, 25);
             Console.SetBufferSize(80, 25);
 
-            //Drawing frame
-            HorizontalLine Topline = new HorizontalLine(0, 78, 0, '+');
-            HorizontalLine Bottomline = new HorizontalLine(0, 78, 24, '+');
-            VerticalLine LeftLine = new VerticalLine(0, 24, 0, '+'); 
-            VerticalLine RightLine = new VerticalLine(0, 24, 78, '+');
+            Walls walls = new Walls(80, 25);
+            walls.Draw();
 
-            Topline.Drow();
-            Bottomline.Drow();
-            LeftLine.Drow();    
-            RightLine.Drow();
+            //Drawing frame
+            
 
             Point p = new Point(3, 3, '*');
             Snake snake = new Snake(p, 4, Direction.RIGHT);
-            snake.Drow();
+            snake.Draw();
 
             FoodCreator foodCreator = new FoodCreator(80, 25, '$');
             Point food = foodCreator.CreateFood();
@@ -36,6 +31,10 @@ namespace snake
             
             while (true)
             {
+                if (walls.IsHit(snake) || snake.IsHitTail())
+                {
+                    break;
+                }
                 if (snake.Eat (food))
                 {
                     food = foodCreator.CreateFood();
